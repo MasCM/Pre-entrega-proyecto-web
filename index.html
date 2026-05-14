@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bienvenido a West Color</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <img src="img/logo.png" alt="Logo West Color">
+    <nav>
+      <ul class="nav-list">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#reseñas">Reseñas</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Inicio -->
+    <section id="inicio">
+      <h1>Bienvenido a West Color</h1>
+      <video src="media/video.mp4" controls>
+        <track src="media/subtitulos.vtt" kind="subtitles" srclang="es" label="Español" default>
+      </video>
+    </section>
+
+    <!-- Productos -->
+    <section id="productos" class="productos">
+      <article>
+        <img src="img/producto1.jpg" alt="Pintura Acrílica">
+        <h2>Pintura Acrílica</h2>
+        <p>Colores vibrantes para interiores y exteriores.</p>
+        <p class="precio">$1200</p>
+        <button>Agregar al carrito 🛒</button>
+      </article>
+      <article>
+        <img src="img/producto2.jpg" alt="Pintura Esmalte">
+        <h2>Pintura Esmalte</h2>
+        <p>Ideal para superficies metálicas y de madera.</p>
+        <p class="precio">$1500</p>
+        <button>Agregar al carrito 🛒</button>
+      </article>
+      <article>
+        <img src="img/producto3.jpg" alt="Pintura Látex">
+        <h2>Pintura Látex</h2>
+        <p>Acabado mate para paredes y techos.</p>
+        <p class="precio">$1000</p>
+        <button>Agregar al carrito 🛒</button>
+      </article>
+    </section>
+
+    <!-- Reseñas -->
+    <section id="reseñas" class="reseñas">
+      <section class="card">
+        <h3>Laura</h3>
+        <p>“La pintura acrílica tiene un acabado espectacular. ¡Muy recomendable!”</p>
+      </section>
+      <section class="card">
+        <h3>Martín</h3>
+        <p>“El esmalte cubre perfecto y seca rápido. Excelente calidad.”</p>
+      </section>
+      <section class="card">
+        <h3>Sofía</h3>
+        <p>“El látex es fácil de aplicar y deja un acabado prolijo.”</p>
+      </section>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto">
+      <form action="https://formspree.io/f/xrejkbpk" method="POST">
+        <input type="text" name="nombre" placeholder="Tu nombre" required>
+        <input type="email" name="email" placeholder="Tu correo" required>
+        <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 West Color</p>
+    <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+    <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+    <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+  </footer>
+</body>
+</html>
